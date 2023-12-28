@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Celebrare Intern </title>
+</head>
+<body>
+
+<div class="editor">
+    <div id="redoBtn" class="btn">REDO</div>
+    <div id="undoBtn" class="btn">UNDO</div>
+    <div id="addTextBtn" class="btn">ADD TEXT</div>
+
+    <!-- Added select element for font type -->
+    <label for="fontSelect">Select Font:</label>
+    <select id="fontSelect">
+        <option value="Arial">Arial</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Courier New">Courier New</option>
+        <!-- Add more font options as needed -->
+    </select>
+
+    <!-- Added input element for text size -->
+    <label for="textSize">Text Size:</label>
+    <input type="number" id="textSize" value="16" min="1">
+
+    <!-- Added input element for text color -->
+    <label for="textColor">Text Color:</label>
+    <input type="color" id="textColor" value="#000000">
+
+    <div id="textArea" contenteditable="true"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
